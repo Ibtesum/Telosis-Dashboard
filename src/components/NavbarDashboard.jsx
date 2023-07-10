@@ -1,6 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/logo.svg"
 
 const NavbarDashboard = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -18,7 +19,7 @@ const NavbarDashboard = () => {
               to="/"
               className="group inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
             >
-              <svg
+              {/* <svg
                 className="hi-mini hi-cube-transparent inline-block w-5 h-5 text-rose-600 transition group-hover:scale-110 dark:text-rose-400"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -30,8 +31,9 @@ const NavbarDashboard = () => {
                   d="M9.638 1.093a.75.75 0 01.724 0l2 1.104a.75.75 0 11-.724 1.313L10 2.607l-1.638.903a.75.75 0 11-.724-1.313l2-1.104zM5.403 4.287a.75.75 0 01-.295 1.019l-.805.444.805.444a.75.75 0 01-.724 1.314L3.5 7.02v.73a.75.75 0 01-1.5 0v-2a.75.75 0 01.388-.657l1.996-1.1a.75.75 0 011.019.294zm9.194 0a.75.75 0 011.02-.295l1.995 1.101A.75.75 0 0118 5.75v2a.75.75 0 01-1.5 0v-.73l-.884.488a.75.75 0 11-.724-1.314l.806-.444-.806-.444a.75.75 0 01-.295-1.02zM7.343 8.284a.75.75 0 011.02-.294L10 8.893l1.638-.903a.75.75 0 11.724 1.313l-1.612.89v1.557a.75.75 0 01-1.5 0v-1.557l-1.612-.89a.75.75 0 01-.295-1.019zM2.75 11.5a.75.75 0 01.75.75v1.557l1.608.887a.75.75 0 01-.724 1.314l-1.996-1.101A.75.75 0 012 14.25v-2a.75.75 0 01.75-.75zm14.5 0a.75.75 0 01.75.75v2a.75.75 0 01-.388.657l-1.996 1.1a.75.75 0 11-.724-1.313l1.608-.887V12.25a.75.75 0 01.75-.75zm-7.25 4a.75.75 0 01.75.75v.73l.888-.49a.75.75 0 01.724 1.313l-2 1.104a.75.75 0 01-.724 0l-2-1.104a.75.75 0 11.724-1.313l.888.49v-.73a.75.75 0 01.75-.75z"
                   clipRule="evenodd"
                 />
-              </svg>
-              <span>Company</span>
+              </svg> */}
+              <img src={logo} alt="" className="w-[6rem]" />
+              <span></span>
             </Link>
             {/* END Logo */}
           </div>
@@ -42,7 +44,7 @@ const NavbarDashboard = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-2">
               <Link
-                to="/admin/dashboard"
+                to="/"
                 className="group text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded-lg text-rose-600 border border-rose-100 bg-rose-50 dark:text-white dark:bg-gray-700 dark:border-transparent"
               >
                 <svg
@@ -61,7 +63,7 @@ const NavbarDashboard = () => {
                 <span>Dashboard</span>
               </Link>
               <Link
-                to="/admin/dashboard/career"
+                to="/career"
                 className="group text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-rose-600 hover:bg-rose-50 active:border-rose-100 dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-700 dark:active:border-gray-600"
               >
                 <svg
@@ -75,7 +77,8 @@ const NavbarDashboard = () => {
                 </svg>
                 <span>Career</span>
               </Link>
-              <Link
+        
+              {/* <Link
                 to="/"
                 className="group text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-rose-600 hover:bg-rose-50 active:border-rose-100 dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-700 dark:active:border-gray-600"
               >
@@ -94,8 +97,8 @@ const NavbarDashboard = () => {
                   <path d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 01-9.274 0C3.985 17.585 3 16.402 3 15.055z" />
                 </svg>
                 <span>Projects</span>
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 to="/"
                 className="group text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-rose-600 hover:bg-rose-50 active:border-rose-100 dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-700 dark:active:border-gray-600"
               >
@@ -109,7 +112,7 @@ const NavbarDashboard = () => {
                   <path d="M15.5 2A1.5 1.5 0 0014 3.5v13a1.5 1.5 0 001.5 1.5h1a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0016.5 2h-1zM9.5 6A1.5 1.5 0 008 7.5v9A1.5 1.5 0 009.5 18h1a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0010.5 6h-1zM3.5 10A1.5 1.5 0 002 11.5v5A1.5 1.5 0 003.5 18h1A1.5 1.5 0 006 16.5v-5A1.5 1.5 0 004.5 10h-1z" />
                 </svg>
                 <span>Sales</span>
-              </Link>
+              </Link> */}
             </nav>
             {/* END Desktop Navigation */}
 
@@ -150,7 +153,7 @@ const NavbarDashboard = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            to="/admin/dashboard/messages"
+                            to="/messages"
                             className={`group text-sm font-medium flex items-center justify-between space-x-2 px-2.5 py-2 rounded-lg border border-transparent ${
                               active
                                 ? "text-rose-800 bg-rose-50 dark:text-white dark:bg-gray-700/75 dark:border-transparent"
@@ -173,32 +176,6 @@ const NavbarDashboard = () => {
                             <span className="grow">Messages</span>
                             <div className="font-semibold inline-flex px-1.5 py-0.5 leading-4 text-xs rounded-full border border-rose-200 text-rose-700 bg-rose-100 dark:text-rose-50 dark:bg-rose-700 dark:border-rose-700">
                               2
-                            </div>
-                          </Link>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            to="/"
-                            className={`group text-sm font-medium flex items-center justify-between space-x-2 px-2.5 py-2 rounded-lg border border-transparent ${
-                              active
-                                ? "text-rose-800 bg-rose-50 dark:text-white dark:bg-gray-700/75 dark:border-transparent"
-                                : "text-gray-700 hover:text-rose-800 hover:bg-rose-50 active:border-rose-100 dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-700/75 dark:active:border-gray-600"
-                            }`}
-                          >
-                            <svg
-                              className="flex-none hi-mini hi-flag inline-block w-5 h-5 opacity-25 group-hover:opacity-50"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path d="M3.5 2.75a.75.75 0 00-1.5 0v14.5a.75.75 0 001.5 0v-4.392l1.657-.348a6.449 6.449 0 014.271.572 7.948 7.948 0 005.965.524l2.078-.64A.75.75 0 0018 12.25v-8.5a.75.75 0 00-.904-.734l-2.38.501a7.25 7.25 0 01-4.186-.363l-.502-.2a8.75 8.75 0 00-5.053-.439l-1.475.31V2.75z" />
-                            </svg>
-                            <span className="grow">Notifications</span>
-                            <div className="font-semibold inline-flex px-1.5 py-0.5 leading-4 text-xs rounded-full border border-rose-200 text-rose-700 bg-rose-100 dark:text-rose-50 dark:bg-rose-700 dark:border-rose-700">
-                              5
                             </div>
                           </Link>
                         )}
@@ -228,37 +205,11 @@ const NavbarDashboard = () => {
                                 clipRule="evenodd"
                               />
                             </svg>
-                            <span className="grow">Account</span>
+                            <span className="grow">Users</span>
                           </Link>
                         )}
                       </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            to="/"
-                            className={`group text-sm font-medium flex items-center justify-between space-x-2 px-2.5 py-2 rounded-lg border border-transparent ${
-                              active
-                                ? "text-rose-800 bg-rose-50 dark:text-white dark:bg-gray-700/75 dark:border-transparent"
-                                : "text-gray-700 hover:text-rose-800 hover:bg-rose-50 active:border-rose-100 dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-700/75 dark:active:border-gray-600"
-                            }`}
-                          >
-                            <svg
-                              className="flex-none hi-mini hi-cog-6-tooth inline-block w-5 h-5 opacity-25 group-hover:opacity-50"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M7.84 1.804A1 1 0 018.82 1h2.36a1 1 0 01.98.804l.331 1.652a6.993 6.993 0 011.929 1.115l1.598-.54a1 1 0 011.186.447l1.18 2.044a1 1 0 01-.205 1.251l-1.267 1.113a7.047 7.047 0 010 2.228l1.267 1.113a1 1 0 01.206 1.25l-1.18 2.045a1 1 0 01-1.187.447l-1.598-.54a6.993 6.993 0 01-1.929 1.115l-.33 1.652a1 1 0 01-.98.804H8.82a1 1 0 01-.98-.804l-.331-1.652a6.993 6.993 0 01-1.929-1.115l-1.598.54a1 1 0 01-1.186-.447l-1.18-2.044a1 1 0 01.205-1.251l1.267-1.114a7.05 7.05 0 010-2.227L1.821 7.773a1 1 0 01-.206-1.25l1.18-2.045a1 1 0 011.187-.447l1.598.54A6.993 6.993 0 017.51 3.456l.33-1.652zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                            <span className="grow">Settings</span>
-                          </Link>
-                        )}
-                      </Menu.Item>
+             
                     </div>
                     <div className="p-2.5 space-y-1">
                       <Menu.Item>

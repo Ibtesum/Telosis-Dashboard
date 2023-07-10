@@ -14,9 +14,9 @@ const FooterDashboard = () => {
             className="font-medium text-rose-600 hover:text-rose-400 dark:text-rose-400 dark:hover:text-rose-300"
             target="_blank"
           >
-            Tailkit
+            Telosis
           </Link>{" "}
-          ©
+          
         </div>
         <div className="pb-4 pt-1 md:pt-4 inline-flex items-center justify-center">
           <span>Crafted with</span>
@@ -35,13 +35,14 @@ const FooterDashboard = () => {
           <span>
             {" "}
             by{" "}
-            <Link
-              href="https://pixelcave.com"
+            <a 
+            target="__blank"
+              href="https://telosis-website.vercel.app/"
               className="font-medium text-rose-600 hover:text-rose-400 dark:text-rose-400 dark:hover:text-rose-300"
-              target="_blank"
+             
             >
-              pixelcave
-            </Link>
+              Telosis
+            </a>
           </span>
         </div>
       </div>
